@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:27:29 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 09:45:52 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 09:47:01 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,11 @@ ClapTrap	& ClapTrap::operator=(ClapTrap const & rhs)
 
 void	ClapTrap::attack(const std::string &target)
 {
-	if (this->_energy_points == 0 || _hit_points == 0)
+	if (_energy_points == 0 || _hit_points == 0)
 		std::cout << "Sorry, ClapTrap " << _name << " can't attack: it's out of order.\n";
 	else
 	{
-		this->_energy_points--;
+		_energy_points--;
 		std::cout << "ClapTrap " << _name << " attacks " << target;
 		std::cout << ", causing " << _attack_damage << " points of damage!\n";
 	}
@@ -73,7 +73,7 @@ void	ClapTrap::beRepaired(unsigned int amount)
 		_hit_points += amount;
 		std::cout << "ClapTrap " << _name << " repairs itself";
 		std::cout << ", getting " << amount << " points back!\n";
-		std::cout << " Now it has " << _hit_points << " hit points and ";
+		std::cout << "Now it has " << _hit_points << " hit points and ";
 		std::cout << _energy_points << " energy points.\n";
 	}
 }
