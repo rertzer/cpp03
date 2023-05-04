@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:01:03 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 11:06:38 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 12:38:43 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class	ScavTrap:  virtual public ClapTrap
 {
 	public :
 		ScavTrap(const std::string name);
-		ScavTrap(void);
 		ScavTrap(const ScavTrap & ct);
 		~ScavTrap(void);
 
@@ -28,6 +27,9 @@ class	ScavTrap:  virtual public ClapTrap
 
 		void	attack(const std::string & target);
 		void	guardGate(void);
+	
+	protected:
+		ScavTrap(void);
 };
 
 #endif

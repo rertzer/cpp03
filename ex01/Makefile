@@ -39,6 +39,6 @@ fclean: clean
 
 re: fclean all
 
--include $(SOURCES:.cpp=.d)
+-include $(DEPS)
 
 .PHONY: all clean fclean re

@@ -1,6 +1,6 @@
 CC = c++
 
-FLAGS = -Wall -Wextra -Werror -std=c++98 -g3
+FLAGS = -Wall -Wextra -Werror -std=c++98 -g3 -MMD -MP
 
 NAME = DiamondTrap 
 
@@ -20,7 +20,7 @@ DEPS = $(OBJS:.o=.d)
 all: $(NAME) 
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
-	$(CC) $(FLAGS) -c -MMD -MP $< -o $@ -I $(INC_DIR)
+	$(CC) $(FLAGS) -c  $< -o $@ -I $(INC_DIR)
 
 
 $(NAME): $(OBJ_DIR) $(OBJS)
@@ -39,6 +39,6 @@ fclean: clean
 
 re: fclean all
 
--include $(SOURCES:.cpp=.d)
+-include $(DEPS)
 
 .PHONY: all clean fclean re
