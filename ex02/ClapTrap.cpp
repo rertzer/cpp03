@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:27:29 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 09:47:01 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 13:06:42 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,13 @@ ClapTrap::ClapTrap(const std::string name): \
 {
 	std::cout << "ClapTrap constructor called\n";
 }
+
+ClapTrap::ClapTrap(void): \
+		_hit_points(10), _energy_points(10), _attack_damage(0)
+{
+	std::cout << "ClapTrap constructor called\n";
+}
+
 
 ClapTrap::ClapTrap(const ClapTrap & src)
 {

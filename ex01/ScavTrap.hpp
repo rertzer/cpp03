@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:01:03 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/03 14:42:10 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 13:03:39 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ class	ScavTrap: public ClapTrap
 
 		void	attack(const std::string & target);
 		void	guardGate(void);
+
+	private:
+		ScavTrap(void);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:48:49 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/03 13:51:27 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 12:59:07 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ class ClapTrap
 		void	beRepaired(unsigned int amount);
 
 	private:
+		ClapTrap(void);
+
 		std::string	_name;
 		int			_hit_points;
 		int			_energy_points;

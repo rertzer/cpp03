@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:01:03 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 09:37:26 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/04 13:07:19 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class	FragTrap: public ClapTrap
 {
-	public :
+	public:
 		FragTrap(const std::string name);
 		FragTrap(const FragTrap & ct);
 		~FragTrap(void);
@@ -26,6 +26,8 @@ class	FragTrap: public ClapTrap
 		FragTrap &	operator=(const FragTrap & rhs);
 
 		void	highFivesGuys(void);
+	private:
+		FragTrap(void);
 };
 
 #endif
