@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:13:10 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 11:12:35 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/10 14:11:01 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ void	ScavTrap::attack(const std::string & target)
 		_energy_points--;
 		std::cout << "ScavTrap " << _name << " hit " << target << " inflicting it ";
 		std::cout << _attack_damage << " damage points! Hourra!!\n";
-		_energy_points--;
 	}
 }
 
