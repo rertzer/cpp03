@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:13:10 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 11:17:09 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/10 12:08:44 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ DiamondTrap::DiamondTrap(void): \
 	_attack_damage = 30;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap & ct): ClapTrap(ct)
+DiamondTrap::DiamondTrap(const DiamondTrap & ct): \
+		ClapTrap(ct), _name(ct._name)
 {
 	std::cout << "DiamondTrap copy constructor called\n";
 }

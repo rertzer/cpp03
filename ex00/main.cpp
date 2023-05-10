@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 17:12:15 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/03 13:52:14 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/10 11:47:12 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(void)
 {
-	ClapTrap	tic("Tic");
+	ClapTrap	tic("Tric");
 	ClapTrap	tic2("Truc");
 
 	tic2 = tic;
