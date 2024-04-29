@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:13:10 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/04 11:12:50 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/10 15:29:35 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,5 @@ FragTrap &	FragTrap::operator=(const FragTrap & rhs)
 
 void	FragTrap::highFivesGuys(void)
 {
-	std::cout << "Hey guys, I'm " << _name << " the FragTrap. Give me Fives!\n";
+	std::cout << "Hey guys, I'm " << _name << " the FragTrap. Give me Five!\n";
 }

@@ -6,7 +6,7 @@
 /*   By: rertzer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:13:10 by rertzer           #+#    #+#             */
-/*   Updated: 2023/05/10 14:06:50 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/05/10 15:27:10 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,5 @@ void	ScavTrap::attack(const std::string & target)
 
 void	ScavTrap::guardGate(void)
 {
-	std::cout << "ScavTrap " << _name << " Keep the Gate\n";
+	std::cout << "ScavTrap " << _name << " Keeps the Gate\n";
 }
