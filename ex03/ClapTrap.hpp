@@ -11,30 +11,29 @@
 /* ************************************************************************** */
 
 #ifndef CLAPTRAP_HPP
-# define CLAPTRAP_HPP
+#define CLAPTRAP_HPP
 
 #include <iostream>
 
-class ClapTrap
-{
-	public:
-		ClapTrap(const std::string name);
-		ClapTrap(const ClapTrap & src);
-		~ClapTrap(void);
-		
-		ClapTrap &	operator=(ClapTrap const &rhs);
+class ClapTrap {
+public:
+  ClapTrap(const std::string name);
+  ClapTrap(const ClapTrap &src);
+  ~ClapTrap(void);
 
-		void	attack(const std::string& target);
-		void	takeDamage(unsigned int amount);
-		void	beRepaired(unsigned int amount);
+  ClapTrap &operator=(ClapTrap const &rhs);
 
-	protected:
-		std::string	_name;
-		int			_hit_points;
-		int			_energy_points;
-		int			_attack_damage;
+  void attack(const std::string &target);
+  void takeDamage(unsigned int amount);
+  void beRepaired(unsigned int amount);
 
-		ClapTrap(void);
+protected:
+  std::string _name;
+  int _hit_points;
+  int _energy_points;
+  int _attack_damage;
+
+  ClapTrap(void);
 };
 
 #endif

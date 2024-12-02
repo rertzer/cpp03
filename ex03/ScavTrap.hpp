@@ -11,25 +11,26 @@
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
-#include <iostream>
 #include "ClapTrap.hpp"
+#include <iostream>
 
-class	ScavTrap:  virtual public ClapTrap
-{
-	public :
-		ScavTrap(const std::string name);
-		ScavTrap(const ScavTrap & ct);
-		~ScavTrap(void);
+class ScavTrap : virtual public ClapTrap {
+public:
+  ScavTrap(const std::string name);
+  ScavTrap(const ScavTrap &ct);
+  ~ScavTrap(void);
 
-		ScavTrap &	operator=(const ScavTrap & rhs);
+  ScavTrap &operator=(const ScavTrap &rhs);
 
-		void	attack(const std::string & target);
-		void	guardGate(void);
-	
-	protected:
-		ScavTrap(void);
+  void attack(const std::string &target);
+  void guardGate(void);
+
+protected:
+  ScavTrap(void);
+
+  static int scavtrap_energy_points;
 };
 
 #endif

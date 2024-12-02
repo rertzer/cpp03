@@ -11,24 +11,23 @@
 /* ************************************************************************** */
 
 #ifndef FRAGTRAP_HPP
-# define FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 
-#include <iostream>
 #include "ClapTrap.hpp"
+#include <iostream>
 
-class	FragTrap: virtual public ClapTrap
-{
-	public :
-		FragTrap(const std::string name);
-		FragTrap(const FragTrap & ct);
-		~FragTrap(void);
+class FragTrap : virtual public ClapTrap {
+public:
+  FragTrap(const std::string name);
+  FragTrap(const FragTrap &ct);
+  ~FragTrap(void);
 
-		FragTrap &	operator=(const FragTrap & rhs);
+  FragTrap &operator=(const FragTrap &rhs);
 
-		void	highFivesGuys(void);
+  void highFivesGuys(void);
 
-	protected:
-		FragTrap(void);
+protected:
+  FragTrap(void);
 };
 
 #endif
